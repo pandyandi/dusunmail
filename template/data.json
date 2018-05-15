@@ -1,0 +1,36 @@
+{
+	"list": [
+	{
+		"subject": "test 1",
+		"from": "user@example.net",
+		"to": "admin@example.net",
+		"cc": "",
+		"date": "2018-07-07",
+		"body": "attachment file 1"
+	},
+	{
+		"subject": "test 2",
+		"from": "verificator@example.net",
+		"to": "admin@example.net",
+		"cc": "",
+		"date": "2018-07-07",
+		"body": "attachment file 2"
+	},
+	{
+		"subject": "test 3",
+		"from": "chamberlain@example.net",
+		"to": "admin@example.net",
+		"cc": "",
+		"date": "2018-07-07",
+		"body": "attachment file 3"
+	},
+	{
+		"subject": "test 4",
+		"from": "staff@example.net",
+		"to": "admin@example.net",
+		"cc": "",
+		"date": "2018-07-07",
+		"body": "attachment file 4"
+	}
+	]
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dusun Mail</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="panel panel-primary">
+				<div class="panel panel-heading">
+					Dusun Mail
+				</div>
+			</div>
+			<div class="panel panel-body">
+				<div class="row">
+					<div class="col-sm-3">
+						<ul class="list-inline">
+							<li>
+								<a href="javascript:;" class="compose" id="compose">Compose</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="menu" id="inbox">Inbox</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-9">
+						<div class="mailboxes">
+							<ul class="list-inline">
+								<li>
+									<a class="preview" id="maillist"></a>
+									<div class="content">
+									</div>
+									<div id="form" class="form" style="display: none">
+										<form role="form" method="POST">
+					                        <div class="box-body">
+					                        	<input hidden name="id" class="form-control" id="id" placeholder="Enter id" required="" disabled>
+					                            <div class="form-group">
+					                                <label for="name">Name</label>
+					                                <input type="text" name="name" class="form-control" id="name" placeholder="Enter document" required="">
+					                            </div>
+					                            <div class="form-group">
+					                                <label for="description">Description</label>
+					                                <textarea class="form-control" name="description" id="description" placeholder="Enter description" required=""></textarea>
+					                            </div>
+					                            <div class="form-group">
+					                                <label for="description">Project</label>
+					                                <select class="form-control select2" name="category_id" id="category_id" required="">
+					                                    <option disabled selected="" value="">-- Select project --</option>
+					                                    <option value="1">Perumahan</option>
+					                                    <option value="2">Mobil</option>
+					                                    <option value="3">Motor</option>
+					                                    <option value="4">Baju</option>
+					                                    <option value="5">Perabotan</option>
+					                                </select>
+					                            </div>
+					                            <input type="hidden" name="status" id="status" value="0">
+					                        </div>
+					                        <!-- /.box-body -->
+
+					                        <div class="box-footer">
+					                            <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Save</button>
+					                        </div>
+					                    </form>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="js/app.js"></script>
+	</body>
+</html>
